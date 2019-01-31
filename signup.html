@@ -1,0 +1,81 @@
+<html>
+    <head>
+  <title>Signup</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    .navbar-default {
+     background-color:rgb(92, 0, 128);
+     border-color: whitesmoke;
+  
+  }
+    </style>
+  </head>
+      <body>
+        <nav class="navbar navbar-default fixed-top navbar-expand-lg navbar-light purple scrolling-navbar">
+  
+        <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" style="color:white"><i>Corp Connect<i></a></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+         </ul>
+		 
+         <ul class="nav navbar-nav navbar-right">
+		   <li> <a href="signup.html" style="color:white">
+          <span class="glyphicon glyphicon-log-in"></span> Signup
+        </a></li>
+         </ul>
+        </div>
+    </div>
+  </nav>
+                </div>
+        <br/><br/><br/><br/><br/><br/>
+  <div class="row">
+    <div class="col-xs-4"></div>
+     <div>   
+     <table></table>    
+     <form action="signup.php" method="post">
+         <tr>
+        <td>
+        <label for="pname"><b>Cin No</b></label></td>
+        <td>
+        <input type="text" placeholder="Enter Cin no" name="ciname" required><br/></td></tr>
+        <div class="col-xs-4"></div>
+        <tr>
+          <td>
+		        <label for="pname"><b>Company Name</b></label></td>t
+        <input type="text" placeholder="Enter Company Name" name="cname" required><br/>
+        <div class="col-xs-4"></div>
+		        <label for="pname"><b>Email</b></label>
+        <input type="email" placeholder="Enter email" name="uname" required><br/>
+        <div class="col-xs-4"></div>
+		        <label for="pname"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pname" required><br/>
+        <div class="col-xs-4"></div>
+		        <label for="pname"><b>Contact No</b></label>
+        <input type="text" placeholder="Enter Contact No" name="coname" required><br/>
+        <b>Company Type</b>
+        <select name="ctype">
+          <option value="S">IT</option>
+          <option value="N">Non IT</option>
+        </select> 
+        <div class="col-xs-4"></div>
+        <label for="pdetails"><b>Address</b></label><br>
+        <div class="col-xs-4">
+        <textarea rows="10" cols="100" maxlength="1000"
+        wrap="hard"name="pdetails"></textarea></div></tr>
+        <br><br>
+        <div class="col-xs-4"></div>
+        <button class="btn btn-primary btn-sx" type="submit">Submit</button>
+        
+            </div>
+        </form>
+  </div>
+    </body>
+</html>
